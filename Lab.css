@@ -1,0 +1,199 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    background-color: blueviolet;
+    font-size: xx-large;
+    font-weight: bold;
+}
+ 
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: bisque;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0px 10px;
+    line-height: 60px;
+    font-size: 20px;
+    display: block;
+
+}
+
+nav li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+nav li:hover>ul {
+    visibility: visible;
+}
+
+nav li:hover {
+    background-color: beige;
+}
+
+nav li:active {
+    background-color: white;
+}
+
+nav ul ul li {
+    width: fit-content;
+    background-color: rgb(204, 151, 72);
+}
+
+
+section {
+    background-color: aliceblue;
+    width: fit-content;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.bar-graph {
+    display: inline-block;
+}
+
+span {
+    display: block;
+    padding-left: 30px;
+}
+.bar-container {
+    width: 50px;
+    height: 300px;
+    background-color: #f0f0f0;
+    margin: 20px;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.thirty {
+    animation-name: grow30;
+}
+
+@keyframes grow30 {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 30%;
+    }
+}
+
+.forty {
+    animation-name: grow40;
+    
+}
+
+@keyframes grow40 {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 40%;
+    }
+}
+
+.eighty {
+    animation-name: grow80;
+    
+}
+
+@keyframes grow80 {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 80%;
+    }
+}
+
+.login {
+    color: white;
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    font-size: 20px;
+    /* margin: 20px 40px; */
+    line-height: 35px;
+    border-radius: 100px;
+    background: transparent;
+    /* text-align: left;
+    vertical-align: middle; */
+    margin: 100px 550px;
+   }
+
+   input {
+    height: 30px;
+    width: 90%;
+    padding-left: 10px;
+    border-radius: 10px;
+   } 
+  
+
+   #my_video {
+    position: absolute;
+    width: auto;
+    height: auto;
+   }
+
+   a[target]{
+    color: white;
+    font-size: 14px;
+   }
+
+   button {
+    float: right;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(42, 78, 109);
+    border: 1px solid white;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+   }
+
+   video {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    max-width: 100vw;
+   }
+
+   .login {
+    position: absolute;
+    background: transparent;
+   }
